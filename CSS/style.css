@@ -48,13 +48,20 @@ body {
     letter-spacing: -3px;
     margin: 0;
 }
-    .special-heading + p {
-        font-size: 18px;
-        text-align: center;
-        color: #1c272678;
-        margin: -10px;
+.special-heading + p {
+    font-size: 18px;
+    text-align: center;
+    color: #1c272678;
+    margin-top: -10px;
+}
+@media(max-width:767px){
+    .special-heading {
+        font-size: 60px;
     }
-
+    .special-heading + p {
+        font-size: 12px;
+    }
+}
 /*end component*/
 /*container of all sections*/
 .container {
@@ -302,6 +309,7 @@ body {
 .about-me {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
+    overflow:hidden;
 }
 .about-me-content{
     margin-top:70px;
